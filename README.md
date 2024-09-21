@@ -37,24 +37,24 @@
 
 除了問題回報，這個工具還有多種應用場景：
 
-1. 用戶體驗研究：記錄真實用戶與網站的互動過程，幫助分析用戶行為模式。
-2. 培訓與教學：製作網站或應用程序的操作教程，適用於遠程培訓。
-3. 工作流程文檔：記錄和標準化公司內部的各種網頁操作流程。
-4. 無障礙性測試：協助開發者了解不同用戶如何使用輔助技術瀏覽網站。
-5. 性能分析：結合生成的trace文件，分析網站在實際用戶操作下的性能表現。
-6. 合規性審核：記錄網站操作過程，用於進行合規性檢查和審核。
+* 用戶體驗研究：記錄真實用戶與網站的互動過程，幫助分析用戶行為模式。
+* 培訓與教學：製作網站或應用程序的操作教程，適用於遠程培訓。
+* 工作流程文檔：記錄和標準化公司內部的各種網頁操作流程。
+* 無障礙性測試：協助開發者了解不同用戶如何使用輔助技術瀏覽網站。
+* 性能分析：結合生成的trace文件，分析網站在實際用戶操作下的性能表現。
+* 合規性審核：記錄網站操作過程，用於進行合規性檢查和審核。
 
 ## 如何使用
 
-1. 從 [Releases](https://github.com/yourusername/your-repo-name/releases) 頁面下載最新版本的應用程式（目前只有 Windows 版本）
-2. 雙擊運行應用程式
+1. 從 [Releases](https://github.com/yourusername/your-repo-name/releases) 頁面下載最新版本的應用程式（目前僅限 Windows 版本）
+2. 如為 zip 檔請解壓縮，並啟動應用程式
 3. 在彈出的視窗中輸入要測試的網站網址
 4. 點擊 "Run Wibzard" 按鈕
 5. 在打開的瀏覽器中正常操作網站，重現問題
 6. 操作完成後，關閉瀏覽器視窗
 7. 在應用程式目錄下找到自動生成的 `trace-{timestamp}.zip` 和 `record-{timestamp}.js` 檔案
 8. 將這兩個檔案傳送給開發團隊
-9. 開發團隊可以前往 [Playwright Trace Viewer](https://trace.playwright.dev/)，點擊 "Select file(s)" 按鈕並上傳 `trace-{timestamp}.zip` 檔案來查看詳細的操作記錄
+9. 開發團隊可以前往 [Playwright Trace Viewer](https://trace.playwright.dev/)，點擊 "Select file(s)" 按鈕並讀取 `trace-{timestamp}.zip` 檔案來查看詳細的操作記錄
 
 就是這麼簡單！
 
@@ -66,7 +66,7 @@
 
 - 使用 Electron 和 Playwright 開發
 - 自動記錄用戶操作和生成 trace 檔案
-- 支援 Windows、macOS 和 Linux 系統
+- 支援 Windows、macOS 和 Linux 系統（macOS 和 Linux 需依照`開發者資訊`自行啟動或打包應用程式。
 
 ## 開發者資訊
 
@@ -79,13 +79,13 @@
 
 ### 建立專案
 
-1. 克隆此儲存庫：
+1. 複製此儲存庫：
    ```
    git clone https://github.com/junsuwhy/wibzard-recorder.git
    cd wibzard-recorder
    ```
 
-2. 安裝依賴：
+2. 安裝依賴程式庫：
    ```
    npm install
    ```
@@ -97,8 +97,8 @@
    npm start
    ```
 
-2. 進行代碼修改
-3. 使用 `Ctrl+R` 或 `Cmd+R` 重新載入應用程式以查看更改
+2. 進行程式碼修改
+3. 使用 `npm start` 重新載入應用程式以查看更改
 
 ### 打包應用程式
 
@@ -110,18 +110,9 @@
    ```
 
 3. 打包後的文件將位於 `dist` 目錄下
-
-#### Windows 打包
-
-- 會在 `dist` 目錄下生成 `.exe` 文件
-
-#### macOS 打包
-
-- 會在 `dist` 目錄下生成 `.app` 文件
-
-#### Linux 打包
-
-- 會在 `dist` 目錄下生成 `.AppImage` 文件
+  - **Windows 打包**：會在 `dist` 目錄下生成 `.exe` 文件
+  - **macOS 打包**：會在 `dist` 目錄下生成 `.app` 文件
+  - **Linux 打包**：會在 `dist` 目錄下生成 `.AppImage` 文件
 
 ### 注意事項
 
