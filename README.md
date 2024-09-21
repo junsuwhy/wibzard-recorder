@@ -2,7 +2,7 @@
 
 歡迎使用網站操作錄製神器！這是一個專為非工程人員設計的工具，讓記錄網站操作流程變得輕鬆簡單。
 
-![版本](https://img.shields.io/badge/版本-0.0.1-blue.svg)
+![版本](https://img.shields.io/badge/版本-0.0.2-blue.svg)
 ![授權](https://img.shields.io/badge/授權-MIT-green.svg)
 
 ## 為什麼要用這個工具？
