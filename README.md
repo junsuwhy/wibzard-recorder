@@ -44,9 +44,9 @@
 5. 性能分析：結合生成的trace文件，分析網站在實際用戶操作下的性能表現。
 6. 合規性審核：記錄網站操作過程，用於進行合規性檢查和審核。
 
-## 如何使用（待完成）
+## 如何使用
 
-1. 從 [Releases](https://github.com/yourusername/your-repo-name/releases) 頁面下載最新版本的應用程式
+1. 從 [Releases](https://github.com/yourusername/your-repo-name/releases) 頁面下載最新版本的應用程式（目前只有 Windows 版本）
 2. 雙擊運行應用程式
 3. 在彈出的視窗中輸入要測試的網站網址
 4. 點擊 "Run Wibzard" 按鈕
@@ -54,8 +54,13 @@
 6. 操作完成後，關閉瀏覽器視窗
 7. 在應用程式目錄下找到自動生成的 `trace-{timestamp}.zip` 和 `record-{timestamp}.js` 檔案
 8. 將這兩個檔案傳送給開發團隊
+9. 開發團隊可以前往 [Playwright Trace Viewer](https://trace.playwright.dev/)，點擊 "Select file(s)" 按鈕並上傳 `trace-{timestamp}.zip` 檔案來查看詳細的操作記錄
 
 就是這麼簡單！
+
+### 展示
+
+![GIF操作影片展示](/web/Wibzard-recorder-demo.gif)
 
 ## 技術細節
 

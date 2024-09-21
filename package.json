@@ -1,6 +1,6 @@
 {
   "name": "wibzard-recorder",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Wibzard-Recorder: A magical web interaction recording tool",
   "main": "main.js",
   "scripts": {
